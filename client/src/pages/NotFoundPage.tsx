@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 interface NotFoundPageProps {}
 
-export const NotFoundPage: FC<NotFoundPageProps> = () => {
+const NotFoundPage: FC<NotFoundPageProps> = () => {
   const router = useNavigate();
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center">
@@ -21,3 +21,5 @@ export const NotFoundPage: FC<NotFoundPageProps> = () => {
     </div>
   );
 };
+
+export default NotFoundPage;
