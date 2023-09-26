@@ -4,11 +4,7 @@ import { Pages } from "./pages";
 interface AppProps {}
 
 const App: FC<AppProps> = () => {
-  return (
-    <div className="">
-      <Pages />
-    </div>
-  );
+  return <Pages />;
 };
 
 export default App;
