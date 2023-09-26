@@ -1,4 +1,5 @@
 import { useState, useEffect, FC } from "react";
+import styled from "styled-components";
 
 interface TypingProps {
   text: string;
@@ -30,10 +31,12 @@ const TypingAnimation: FC<TypingProps> = ({ text, speed = 70 }) => {
   }, [text, currentIndex, speed, startTyping]);
 
   return (
-    <span className="w-full text-[32px] max-sm:text-[26px] font-semibold">
-      {displayedText}
-    </span>
+    <TypingText className="w-full font-semibold">{displayedText}</TypingText>
   );
 };
 
 export default TypingAnimation;
+
+const TypingText = styled.span`
+  font-size: 4vmax;
+`;
