@@ -53,3 +53,22 @@ html {
 #cover.cover-left {
   animation: coverleft 2000ms both cubic-bezier(0.77, 0, 0.175, 1);
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s forwards;
+}
+
+.box-shadow {
+  box-shadow: 15px 7px 31px -3px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 15px 7px 31px -3px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 15px 7px 31px -3px rgba(0, 0, 0, 0.41);
+}
