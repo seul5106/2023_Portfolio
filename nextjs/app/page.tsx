@@ -21,6 +21,7 @@ const IndexPage: NextPage<IndexProps> = () => {
         <Image
           className="w-full object-cover h-[600px]"
           src={background}
+          priority
           alt="배경화면"
         />
         <div className="absolute inset-0 bg-black opacity-50" />
