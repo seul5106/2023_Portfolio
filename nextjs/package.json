@@ -5,12 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 8080",
     "lint": "next lint"
   },
   "dependencies": {
     "@types/tailwindcss": "^3.1.0",
-    "next": "latest",
+    "next": "13.4.19",
     "react": "latest",
     "react-dom": "latest",
     "styled-components": "^6.0.8"

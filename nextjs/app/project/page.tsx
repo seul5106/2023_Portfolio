@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { Header } from "@/components/Layout/Header";
-import ProjectItem from "@/components/Project/ProjectItem";
-import TypingAnimation from "@/components/TypingAnimation";
-import { NextPage } from "next";
-import { useState } from "react";
+import { Header } from '@/components/Layout/Header';
+import ProjectItem from '@/components/Project/ProjectItem';
+import TypingAnimation from '@/components/TypingAnimation';
+import { NextPage } from 'next';
+import { useState } from 'react';
 
 interface ProjectPageProps {}
 
@@ -34,6 +34,7 @@ const ProjectPage: NextPage<ProjectPageProps> = () => {
               title="Ai_Plaza"
               content="124124123"
               link="https:www.aiplaza.co.kr"
+              routerLink="/project/aiplaza"
               // ImgSrc='123'
             />
           </div>

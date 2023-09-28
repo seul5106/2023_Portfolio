@@ -1,11 +1,12 @@
-import { StaticImageData } from "next/image";
-import { FC } from "react";
+import { StaticImageData } from 'next/image';
+import { FC } from 'react';
 
 interface ProjectItemProps {
   title: string;
   content: string;
   ImgSrc?: StaticImageData;
   link?: string;
+  routerLink?: string;
 }
 
 const ProjectItem: FC<ProjectItemProps> = ({ title, content, link }) => {
