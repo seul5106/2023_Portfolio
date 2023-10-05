@@ -31,7 +31,7 @@ const ProjectItem: FC<ProjectItemProps> = ({
         }`}
       >
         <Image
-          className=" object-cover max-w-[380px] max-h-[280px] max-sm:max-h-full rounded-[10px] max-sm:max-w-full"
+          className="  object-contain max-w-[380px] max-h-[280px] max-sm:max-h-full rounded-[10px] max-sm:max-w-full"
           src={ImgSrc}
           alt="프로젝트 이미지"
           priority
