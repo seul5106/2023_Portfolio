@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { NextPage } from "next";
-import TypingAnimation from "../components/TypingAnimation";
-import styled from "styled-components";
-import AboutMe from "../components/AboutMe";
-import Skils from "../components/Skils/Skils";
-import Contact from "../components/Contact";
-import { background } from "@/public";
-import Image from "next/image";
-import { Header } from "@/components/Layout/Header";
+import { NextPage } from 'next';
+import TypingAnimation from '../components/TypingAnimation';
+import styled from 'styled-components';
+import AboutMe from '../components/AboutMe';
+import Skils from '../components/Skils/Skils';
+import Contact from '../components/Contact';
+import { background } from '@/public';
+import Image from 'next/image';
+import { Header } from '@/components/Layout/Header';
 
 interface IndexProps {}
 
