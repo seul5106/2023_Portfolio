@@ -9,7 +9,7 @@ interface ProjectItemProps {
   ImgSrc?: StaticImageData;
   link?: string;
   routerLink?: string;
-  period: string;
+  period?: string;
 }
 
 const ProjectItem: FC<ProjectItemProps> = ({
@@ -26,33 +26,43 @@ const ProjectItem: FC<ProjectItemProps> = ({
     <div className="p-4 bg-grayscale-100 rounded-[5px] box-shadow max-w-[900px] w-full h-full">
       <p className=" text-center text-[21px] font-medium">{title}</p>
       <div
-        className={`flex max-sm:flex-col mt-5 gap-4 h-full ${
+        className={`flex max-sm:flex-col mt-5 gap-4 h-full w-full ${
           itemRight ? 'flex-row-reverse' : ''
         }`}
       >
         <Image
-          className=" object-cover max-w-[380px] rounded-[10px] max-sm:max-w-full"
+          className=" object-cover max-w-[380px] max-h-[280px] max-sm:max-h-full rounded-[10px] max-sm:max-w-full"
           src={ImgSrc}
           alt="프로젝트 이미지"
+          priority
         />
         <div className="w-full flex flex-col justify-between">
-          <div className="flex flex-col gap-4">
-            <span className=" whitespace-pre-line text-grayscale-600">
-              {content}
-            </span>
-            <div>
-              <ProjectContentItem label="Link" link={link} />
+          <span className=" whitespace-pre-line text-grayscale-600">
+            {content}
+          </span>
+
+          <div className="mt-4 w-full">
+            {link ? <ProjectContentItem label="Link" link={link} /> : <></>}
+            {period ? (
               <ProjectContentItem label="Period" content={period} />
-            </div>
+            ) : (
+              <></>
+            )}
+            {period ? (
+              <button
+                onClick={() => {
+                  router.push(routerLink);
+                }}
+                className="w-[50%] max-sm:w-full mt-2 bg-black text-grayscale-white rounded-[5px] p-2 flex items-center justify-center text-[14px]"
+              >
+                <span className=" text-[14px] font-semibold">
+                  ▶ 자세히 보기
+                </span>
+              </button>
+            ) : (
+              <></>
+            )}
           </div>
-          <button
-            onClick={() => {
-              router.push(routerLink);
-            }}
-            className="w-[50%] max-sm:w-full mt-2 bg-black text-grayscale-white rounded-[5px] p-2 flex items-center justify-center text-[14px]"
-          >
-            <span className=" text-[14px] font-semibold">▶ 자세히 보기</span>
-          </button>
         </div>
       </div>
     </div>
@@ -73,8 +83,8 @@ const ProjectContentItem: FC<ProjectContentItemProps> = ({
   link,
 }) => {
   return (
-    <div className="flex gap-2 w-full text-grayscale-700">
-      <p className="font-medium">{label}:</p>
+    <div className="text-grayscale-700">
+      <a className="font-medium">{`${label}: `}</a>
       {link ? (
         <a
           href={link}
@@ -85,7 +95,7 @@ const ProjectContentItem: FC<ProjectContentItemProps> = ({
           {link}
         </a>
       ) : (
-        <span className=" font-light">{content}</span>
+        <a className=" font-light">{content}</a>
       )}
     </div>
   );

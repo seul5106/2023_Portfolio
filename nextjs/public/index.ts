@@ -23,6 +23,11 @@ import portone from './portone.png';
 import logo from './logo.png';
 
 import aiplaza from './aiplaza.png';
+import wineus from './wineus.png';
+import askhow from './askhow.png';
+import army from './army.svg';
+import stockplay from './stockplay.png';
+import twiny from './twiny.png';
 
 export {
   background,
@@ -44,4 +49,9 @@ export {
   portone,
   logo,
   aiplaza,
+  wineus,
+  askhow,
+  army,
+  stockplay,
+  twiny,
 };
