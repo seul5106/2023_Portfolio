@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { FC } from "react";
-import SkillsItem from "./SkilsItem";
-import SkilsItems from "./SkilsItems";
+import { FC } from 'react';
+import SkillsItem from './SkillsItem';
+import SkilsItems from './SkillsItems';
 import {
   aws,
   css,
@@ -20,14 +20,14 @@ import {
   react,
   tailwind,
   typescript,
-} from "@/public";
+} from '@/public';
 
 interface SkilsProps {}
 
 const Skils: FC<SkilsProps> = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center mt-[40px]">
-      <p className=" text-[32px] font-medium">Skils</p>
+      <p className=" text-[32px] font-medium">Skills</p>
       <SkilsItems label="Lang">
         <SkillsItem ImgSrc={javascript} ItemName="Javascript" />
         <SkillsItem ImgSrc={typescript} ItemName="typescript" />

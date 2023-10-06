@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Image, { StaticImageData } from "next/image";
-import { FC } from "react";
+import Image, { StaticImageData } from 'next/image';
+import { FC } from 'react';
 
 interface SkilsItemProps {
   ImgSrc: StaticImageData;

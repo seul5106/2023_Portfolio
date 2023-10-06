@@ -4,7 +4,7 @@ import { NextPage } from 'next';
 import TypingAnimation from '../components/TypingAnimation';
 import styled from 'styled-components';
 import AboutMe from '../components/AboutMe';
-import Skils from '../components/Skils/Skils';
+import Skils from '../components/Skills/Skills';
 import Contact from '../components/Contact';
 import { background } from '@/public';
 import Image from 'next/image';

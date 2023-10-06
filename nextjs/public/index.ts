@@ -29,6 +29,8 @@ import army from './army.svg';
 import stockplay from './stockplay.png';
 import twiny from './twiny.png';
 
+import headerArrowLeft from './header-arrow-left.png';
+
 export {
   background,
   javascript,
@@ -54,4 +56,5 @@ export {
   army,
   stockplay,
   twiny,
+  headerArrowLeft,
 };
