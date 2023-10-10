@@ -34,8 +34,8 @@ const IndexPage: NextPage<IndexProps> = () => {
       <ContentContainer>
         <AboutMe />
         <Skils />
-        <Contact />
       </ContentContainer>
+      <Contact />
     </div>
   );
 };

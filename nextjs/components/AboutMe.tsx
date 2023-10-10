@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { FC } from "react";
+import { FC } from 'react';
 
 interface AboutMeProps {}
 
 const AboutMe: FC<AboutMeProps> = () => {
   return (
-    <div className=" flex justify-center">
+    <div className=" flex justify-center mt-10">
       <div className="flex max-sm:flex-col items-center gap-10  justify-between max-w-[960px]">
         <div className=" text-center text-grayscale-800 text-[32px] leading-[38px]">
           <p className=" underline">About</p>

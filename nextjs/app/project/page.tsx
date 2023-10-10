@@ -35,9 +35,6 @@ const ProjectPage: NextPage<ProjectPageProps> = () => {
         </div>
       ) : (
         <div className="w-full min-h-full fade-in bg-grayscale-white  p-10 max-sm:px-5 flex flex-col justify-start">
-          <p className="w-full text-center text-h1 font-semibold mt-10">
-            Project
-          </p>
           <div className="flex flex-col gap-[48px] mt-10 justify-center items-center h-full">
             <ProjectItem
               itemRight={true}

@@ -58,6 +58,44 @@ const AIplazaPage: NextPage<AIplazaPageProps> = () => {
               </p>
             </div>
           </div>
+          <div>
+            <p className=" text-grayscale-800 font-medium text-[17px]">
+              3. 프로젝트 사담
+            </p>
+            <div className="ml-4 font-light text-[15px]">
+              <p>nestJS를 1주일동안 개인공부 후 투입된 프로젝트입니다.</p>
+              <p>
+                다행히 회사 내부에 레퍼런스 코드가 온전히 존재하여 학습하는데는
+                큰 문제가 없었으나
+              </p>
+              <p>
+                사용자가 응답한 폼 데이터를 연세대측 API에 전달하여 결과값을
+                리턴받는 업무가 있었으며
+              </p>
+              <p>
+                연세대측 API의 데이터 분석 속도가 생각외로 오래 걸려 API
+                타임아웃 현상이 발생하였으며
+              </p>
+              <p>
+                이에 대한 대처로 스케쥴러로 정해진 시간에 결과값을 다시 수신
+                받거나
+              </p>
+              <p>AI Plaza 내부 시스템에 결과값을 받을 컨트롤러 하나를 열어서</p>
+              <p>
+                연세대측에서 데이터 분석이 완료되면 저희 측 시스템에 완료된
+                결과값을 전달해주는 방안이 있었습니다.
+              </p>
+              <p>
+                두 가지 방안 중 연세대측에서 가능한 분석이 끝나면 사용자가
+                결과를 확인했으면 좋겠다 하여 두 번째 방안을 채택하였습니다.
+              </p>
+              <br />
+              <p>
+                처음 투입된 프로젝트였지만 tailwindCSS, nestjs에 대해서 어느
+                정도 숙련도를 갖추게 된 프로젝트였습니다.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </ProjectItemPageLayout>

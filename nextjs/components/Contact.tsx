@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import { logo } from "@/public";
-import Image from "next/image";
-import { FC } from "react";
+import { logo } from '@/public';
+import Image from 'next/image';
+import { FC } from 'react';
 
 interface ContactProps {}
 
 const Contact: FC<ContactProps> = () => {
   return (
     <div className="flex justify-center">
-      <div className="w-full max-w-[900px] bg-grayscale-800 py-4 px-3 rounded-[5px] mt-10 flex justify-center">
+      <div className="w-full bg-grayscale-800 py-10 px-3 mt-10 flex justify-center">
         <div className="flex-col w-full max-w-[700px] ">
           <p className=" text-grayscale-white max-sm:text-center sm:ml-3">
             Contact

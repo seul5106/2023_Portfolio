@@ -24,7 +24,8 @@ const ProjectItem: FC<ProjectItemProps> = ({
   const router = useRouter();
   return (
     <div className="p-4 bg-grayscale-100 rounded-[5px] box-shadow max-w-[900px] w-full h-full">
-      <p className=" text-center text-[21px] font-medium">{title}</p>
+      <p className=" text-center text-[28px] font-bold">{title}</p>
+      <div className="border-b border-grayscale-200 mt-4" />
       <div
         className={`flex max-sm:flex-col mt-5 gap-4 h-full w-full ${
           itemRight ? 'flex-row-reverse' : ''

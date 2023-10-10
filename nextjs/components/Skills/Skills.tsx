@@ -26,7 +26,7 @@ interface SkilsProps {}
 
 const Skils: FC<SkilsProps> = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center mt-[40px]">
+    <div className="w-full flex flex-col justify-center items-center mt-[100px]">
       <p className=" text-[32px] font-medium">Skills</p>
       <SkilsItems label="Lang">
         <SkillsItem ImgSrc={javascript} ItemName="Javascript" />
