@@ -29,28 +29,60 @@ const Skils: FC<SkilsProps> = () => {
     <div className="w-full flex flex-col justify-center items-center mt-[100px]">
       <p className=" text-[32px] font-medium">Skills</p>
       <SkilsItems label="Lang">
-        <SkillsItem ImgSrc={javascript} ItemName="Javascript" />
-        <SkillsItem ImgSrc={typescript} ItemName="typescript" />
+        <SkillsItem
+          Proficiency="familiar"
+          ImgSrc={javascript}
+          ItemName="Javascript"
+        />
+        <SkillsItem
+          Proficiency="familiar"
+          ImgSrc={typescript}
+          ItemName="typescript"
+        />
       </SkilsItems>
       <SkilsItems label="Front">
-        <SkillsItem ImgSrc={html} ItemName="Html" />
-        <SkillsItem ImgSrc={css} ItemName="CSS" />
-        <SkillsItem ImgSrc={react} ItemName="React" />
-        <SkillsItem ImgSrc={nextjs} ItemName="Next.js" />
-        <SkillsItem ImgSrc={tailwind} ItemName="Tailwind CSS" />
+        <SkillsItem Proficiency="familiar" ImgSrc={html} ItemName="Html" />
+        <SkillsItem Proficiency="familiar" ImgSrc={css} ItemName="CSS" />
+        <SkillsItem Proficiency="familiar" ImgSrc={react} ItemName="React" />
+        <SkillsItem
+          Proficiency="intermediate"
+          ImgSrc={nextjs}
+          ItemName="Next.js"
+        />
+        <SkillsItem
+          Proficiency="familiar"
+          ImgSrc={tailwind}
+          ItemName="Tailwind CSS"
+        />
       </SkilsItems>
       <SkilsItems label="Backend">
-        <SkillsItem ImgSrc={nestjs} ItemName="NestJs" />
-        <SkillsItem ImgSrc={mongodb} ItemName="MongoDB" />
-        <SkillsItem ImgSrc={mysql} ItemName="MySql" />
-        <SkillsItem ImgSrc={express} ItemName="Express" />
+        <SkillsItem Proficiency="familiar" ImgSrc={nestjs} ItemName="NestJs" />
+        <SkillsItem
+          Proficiency="familiar"
+          ImgSrc={mongodb}
+          ItemName="MongoDB"
+        />
+        <SkillsItem
+          Proficiency="intermediate"
+          ImgSrc={mysql}
+          ItemName="MySql"
+        />
+        <SkillsItem
+          Proficiency="intermediate"
+          ImgSrc={express}
+          ItemName="Express"
+        />
       </SkilsItems>
       <SkilsItems label="Etc">
-        <SkillsItem ImgSrc={git} ItemName="Git" />
-        <SkillsItem ImgSrc={aws} ItemName="Aws" />
-        <SkillsItem ImgSrc={ncp} ItemName="NCP" />
-        <SkillsItem ImgSrc={nodejs} ItemName="NodeJs" />
-        <SkillsItem ImgSrc={portone} ItemName="PortOne" />
+        <SkillsItem Proficiency="familiar" ImgSrc={git} ItemName="Git" />
+        <SkillsItem Proficiency="familiar" ImgSrc={aws} ItemName="AWS" />
+        <SkillsItem Proficiency="tried" ImgSrc={ncp} ItemName="NCP" />
+        <SkillsItem Proficiency="familiar" ImgSrc={nodejs} ItemName="NodeJs" />
+        <SkillsItem
+          Proficiency="familiar"
+          ImgSrc={portone}
+          ItemName="PortOne"
+        />
       </SkilsItems>
     </div>
   );

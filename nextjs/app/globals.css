@@ -1,4 +1,4 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 @tailwind base;
 @tailwind components;
@@ -7,8 +7,8 @@
 @layer base {
   * {
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
-      Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
-      "Noto Sans KR", "Malgun Gothic", sans-serif;
+      Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
+      'Noto Sans KR', 'Malgun Gothic', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     @apply box-border;
@@ -71,4 +71,34 @@ html {
   box-shadow: 15px 7px 31px -3px rgba(0, 0, 0, 0.41);
   -webkit-box-shadow: 15px 7px 31px -3px rgba(0, 0, 0, 0.41);
   -moz-box-shadow: 15px 7px 31px -3px rgba(0, 0, 0, 0.41);
+}
+
+.Skill_container:hover .Skill_label {
+  visibility: visible;
+  animation: fadeout1 0.3s;
+  -moz-animation: fadeout1 0.3s; /* Firefox */
+  -webkit-animation: fadeout1 0.3s; /* Safari and Chrome */
+  -o-animation: fadeout1 0.3s; /* Opera */
+}
+
+.Skill_label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  opacity: 0.8;
+  font-weight: 700;
+  font-size: 0.825rem;
+  color: white;
+  visibility: hidden;
+}
+
+@keyframes fadeout1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
 }
