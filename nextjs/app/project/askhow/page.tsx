@@ -60,6 +60,51 @@ const AskhowPage: NextPage<AskHowPageProps> = () => {
               </p>
             </div>
           </div>
+          <div>
+            <p className=" text-grayscale-800 font-medium text-[17px]">
+              3. 프로젝트 경험
+            </p>
+            <div className="ml-4 font-light text-[15px]">
+              <p>
+                회사에서는 주로 MongoDB를 사용하여 개발하였지만, 고객사의
+                요청으로 MariaDB로 데이터베이스를 교체하게 되었습니다.
+              </p>
+              <p>
+                비록 typeorm을 사용하였으나, 특정 SQL 문장들 (특히 having
+                절)에서 제한 사항이 있어 바닐라 SQL로 직접 처리하였습니다.
+              </p>
+              <br />
+              <p>
+                또한, 고객사에서는 SNS 동의를 한 회원들에게 메시지 발송 기능을
+                요청하였습니다.
+              </p>
+              <p>
+                이를 위해 Solapi를 활용하여 다양한 발송 옵션 (전체 발송, 전문가
+                전체 발송, 회원 전체 발송 및 개별 발송)을 구현하였습니다.
+              </p>
+              <br />
+              <p>
+                프로젝트 검수 대기 중, 고객사 측에서 예고하지 않은 이벤트를
+                진행하였습니다.
+              </p>
+              <p>
+                이로 인해 사용자 접속이 급증하며 nginx에서 503 에러가
+                발생하였습니다.
+              </p>
+              <p>
+                AWS의 로드밸런서 설정은 이미 완료 상태였으나, 예상치 못한 문제로
+                서버의 정상 작동이 방해되었습니다.
+              </p>
+              <p>
+                문제 분석 결과, AWS의 health check 설정이 제대로 동작하지 않아
+                발생한 것으로 확인되었습니다.
+              </p>
+              <p>
+                health check에서 200 상태 코드 대신 302가 반환되고 있어서, 이를
+                허용하여 문제를 해결하였습니다.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </ProjectItemPageLayout>
